@@ -34,7 +34,7 @@ namespace BoggleWordChecker
 
 				private bool DFS(char[][] board, TrieNode node, bool[,] visited, int rows, int cols, int r, int c)
 				{
-					if (r < 0 || r >= rows || c < 0 || c >= cols || visited[r, c])
+					if (visited[r, c])
 					{
 						return false;
 					}
